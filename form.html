@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="user">帳號</label>
+        <input type="text" id="user" name="user" required>
+        <br>
+        <label for="pw">密碼</label>
+        <input type="password" id="pw">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+        <label for="date">日期</label>
+        <input type="date" id="date">
+        <br>
+        <label for="number">數量</label>
+        <input type="number" id="number">
+        <br>
+        <label>性別</label>
+
+        <input type="radio" id="male" name="gender" value="男">
+        <label for="male">男</label>
+        
+        <input type="radio" id="female" name="gender" value="女">
+        <label for="female">女</label>
+
+        <br>
+        <label>專長</label>
+        <input type="checkbox" id="design" name="skill" value="平面設計">
+        <label for="design">平面設計</label>
+
+        <input type="checkbox" id="uiux" name="skill" value="uiux">
+        <label for="uiux">uiux</label>
+
+        <input type="checkbox" id="frontend" name="skill" value="前端工程">
+        <label for="frontend">前端工程</label>
+
+        <br>
+        <label for="edu">學歷</label>
+        <select name="edu" id="edu">
+            <option value="國小">國小</option>
+            <option value="國中">國中</option>
+            <option value="高中職">高中職</option>
+            <option value="大專院校">大專院校</option>
+            <option value="研究所以上">研究所以上</option>
+        </select>
+        <br>
+        <input type="submit" value="送出">   
+        <input type="reset" value="清空">
+        <input type="button" value="自定義">
+        <br>
+        <button type="submit">送出</button>
+        <button type="reset">清空</button>
+        <button type="button">自定義</button>
+    </form>
+</body>
+</html>
