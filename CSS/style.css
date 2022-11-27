@@ -1,6 +1,3 @@
-h1 {
-    color: red;
-}
-p {
-    color: orange;
-}
+@import url('a.css');
+@import url('b.css');
+
