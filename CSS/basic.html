@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        li {
-            color: red;
+        h1 {
+            color: red!important;
         }
-        .abc {
+        h1 {
+            color: greenyellow!important;
+        }
+        .abc{
             color: greenyellow;
         }
-        #xyz {
+        #xyz{
             color:pink;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- 
@@ -28,12 +32,20 @@
         3. 外部
 
         選取器
-        標籤選取器
-        類別（class）選取器
-        ID（只可使用一次）
+        1. 標籤選取器
+        2. 類別（class）選取器
+        3. ID（只可使用一次）
+
+        權重 影響元素越少 權重越重 越優先套用
+
+        !important > 嵌入 > id > class > tag
+
+        套用順序
+
+
      -->
     <section id="intro">
-        <h1>title</h1>
+        <h1 class="abc" id="xyz" style="color:#ff47b6;">title</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla unde debitis eveniet quia, minus eaque? Quaerat fugiat numquam ratione, sequi, repudiandae totam quam a cumque earum culpa quis soluta iste?
         </p>
