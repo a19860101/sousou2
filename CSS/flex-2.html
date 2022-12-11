@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ccc;
+            justify-content: center;
+            /* 
+                start, center, end
+                space-around, space-between , space-evenly
+            */
+            align-items: center;
+            /* 
+                start, center, end
+                stretch, baseline
+            */
+        }
+        .col {
+            width: 20%;
+            padding-inline:15px;
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem laborum in magnam veritatis nihil earum doloribus corrupti qui ratione enim nesciunt veniam est reiciendis laudantium, cumque quae impedit quas.
+            </p>
+        </div>
+        <div class="col">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem laborum in magnam veritatis nihil earum doloribus corrupti qui ratione enim nesciunt veniam est reiciendis laudantium, cumque quae impedit quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem laborum in magnam veritatis nihil earum doloribus corrupti qui ratione enim nesciunt veniam est reiciendis laudantium, cumque quae impedit quas.
+            </p>
+        </div>
+        <div class="col">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque autem laborum in magnam veritatis nihil earum doloribus corrupti qui ratione enim nesciunt veniam est reiciendis laudantium, cumque quae impedit quas.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
