@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* width: 1200px; */
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ccc;
+
+            /* flex-direction: column; */
+        }
+        .big {
+            background-color: #098;
+            width: 300px;
+            /* flex-basis: 400px; */
+            /* flex-grow:0; */
+            /* flex-shrink:0; */
+
+            /* order: 2; */
+        }
+        .small {
+            background-color: #a0f;
+            width: 400px;
+            /* flex-grow: 1; */
+            order: 1;
+        }
+
+        .col {
+            flex: 1 0 0;
+
+            /* [grow shrink basis] */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magnam, provident molestiae minus sit, ipsam facilis sequi nostrum debitis, deleniti molestias! Perspiciatis dolore consequatur atque labore earum deleniti doloremque ipsam!
+        </div>
+        <div class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magnam, provident molestiae minus sit, ipsam facilis sequi nostrum debitis, deleniti molestias! Perspiciatis dolore consequatur atque labore earum deleniti doloremque ipsam!
+        </div>
+        <div class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut magnam, provident molestiae minus sit, ipsam facilis sequi nostrum debitis, deleniti molestias! Perspiciatis dolore consequatur atque labore earum deleniti doloremque ipsam!
+        </div>
+    </div>
+    <div class="container">
+        <div class="big">
+            <p>
+                big
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laboriosam impedit animi. Praesentium iure, sint tenetur delectus dignissimos, quam repudiandae deleniti quis debitis ipsam architecto magnam culpa nihil in sequi.
+            </p>
+        </div>
+        <div class="small">
+            <p>
+                small
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores, labore voluptatibus tempora ipsa laboriosam et rem ratione tenetur autem recusandae temporibus explicabo sed odio sit excepturi voluptates corporis consequuntur.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
