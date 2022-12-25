@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+
+            position: relative;
+            top: 50px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #1359e4;
+
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+            z-index: 9999999;
+        }
+        header {
+            width: 600px;
+            height: 100px;
+            background-color: #f00;
+            z-index: 5;
+            position: relative;
+        }
+        .gotop {
+            width: 100px;
+            height: 100px;
+            background-color: #098;
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        定位 position
+        1. static 靜態
+        2. relative 相對 // top bottom left right z-index
+        3. absolute 絕對 
+        4. fixed 固定
+        5. sticky 黏性
+    -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+    <header></header>
+    <div class="gotop"></div>
+</body>
+</html>
