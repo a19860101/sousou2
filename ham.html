@@ -65,19 +65,44 @@
             transform: rotate(-45deg);
             top: 0;
         } 
+
+        nav {
+            width: 300px;
+            background-color: #ccc;
+            transform: translateX(-100%);
+            transition:500ms;
+            height: 300px;
+        }
+        nav.open {
+            transform: translateX(0);
+            background-color: pink;
+            height: 500px;
+        }
     </style>
 </head>
 <body>
     <div class="ham">
         <span></span>
     </div>
+    <nav>
+        <ul>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+        </ul>
+    </nav>
     <script>
         let ham = document.querySelector('.ham');
+        let N = document.querySelector('nav');
         // console.log(ham);
         ham.onclick = function(){
             // this.classList.add('ham-x');
             // this.classList.remove('ham-x');
             this.classList.toggle('ham-x');
+            N.classList.toggle('open');
             
         }
     </script>
