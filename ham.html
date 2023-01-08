@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ham {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+            cursor: pointer;
+        }
+        .ham span {
+            position: absolute;
+            width: 85%;
+            height: 6px;
+            background-color: #f00;
+            inset: 0;
+            margin: auto;
+        }
+        .ham span::before {
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #098;
+            bottom: 12px;
+        }
+        .ham span::after {
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fa0;
+            top: 12px;
+        }
+        .ham-x span {
+            background-color: transparent;
+            /* opacity: 0; */
+            /* display: none; */
+        }
+        .ham-x span::before {
+            transform: rotate(45deg);
+            bottom: 0;
+        }
+        .ham-x span::after {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="ham">
+        <span></span>
+    </div>
+</body>
+</html>
