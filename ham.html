@@ -12,6 +12,10 @@
             background-color: #ccc;
             position: relative;
             cursor: pointer;
+            transition:500ms;
+        }
+        .ham:hover {
+            background-color: #2a2a2a;
         }
         .ham span {
             position: absolute;
@@ -20,22 +24,33 @@
             background-color: #f00;
             inset: 0;
             margin: auto;
+            transition:500ms;
         }
+        /* <div class="ham active"> */
+        .ham.active {}
+        /* 
+            <div class="ham">
+                <div class="active"></div>
+            </div>
+        */
+        .ham .active{}
         .ham span::before {
             content:'';
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #098;
+            background-color: #f00;
             bottom: 12px;
+            transition:500ms;
         }
         .ham span::after {
             content:'';
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #fa0;
+            background-color: #f00;
             top: 12px;
+            transition:500ms;
         }
         .ham-x span {
             background-color: transparent;
@@ -56,5 +71,15 @@
     <div class="ham">
         <span></span>
     </div>
+    <script>
+        let ham = document.querySelector('.ham');
+        // console.log(ham);
+        ham.onclick = function(){
+            // this.classList.add('ham-x');
+            // this.classList.remove('ham-x');
+            this.classList.toggle('ham-x');
+            
+        }
+    </script>
 </body>
 </html>
